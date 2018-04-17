@@ -1,0 +1,74 @@
+//
+// margin and padding helper classes
+//
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+@for $i from 0 through 20 {
+
+  $pixel: $i * 5;
+
+  .mt-#{$pixel} {margin-top: #{$pixel}px;}
+  .mr-#{$pixel} {margin-right: #{$pixel}px;}
+  .mb-#{$pixel} {margin-bottom: #{$pixel}px;}
+  .ml-#{$pixel} {margin-left: #{$pixel}px;}
+
+  .pt-#{$pixel} {padding-top: #{$pixel}px;}
+  .pr-#{$pixel} {padding-right: #{$pixel}px;}
+  .pb-#{$pixel} {padding-bottom: #{$pixel}px;}
+  .pl-#{$pixel} {padding-left: #{$pixel}px;}
+
+  // xs
+  @media (min-width: $xs) and (max-width: $sm - 1) {
+    .mt-xs-#{$pixel} {margin-top: #{$pixel}px;}
+    .mr-xs-#{$pixel} {margin-right: #{$pixel}px;}
+    .mb-xs-#{$pixel} {margin-bottom: #{$pixel}px;}
+    .ml-xs-#{$pixel} {margin-left: #{$pixel}px;}
+
+    .pt-xs-#{$pixel} {padding-top: #{$pixel}px;}
+    .pr-xs-#{$pixel} {padding-right: #{$pixel}px;}
+    .pb-xs-#{$pixel} {padding-bottom: #{$pixel}px;}
+    .pl-xs-#{$pixel} {padding-left: #{$pixel}px;}
+  }
+
+  // sm
+  @media (min-width: $sm) and (max-width: $md - 1) {
+    .mt-sm-#{$pixel} {margin-top: #{$pixel}px;}
+    .mr-sm-#{$pixel} {margin-right: #{$pixel}px;}
+    .mb-sm-#{$pixel} {margin-bottom: #{$pixel}px;}
+    .ml-sm-#{$pixel} {margin-left: #{$pixel}px;}
+
+    .pt-sm-#{$pixel} {padding-top: #{$pixel}px;}
+    .pr-sm-#{$pixel} {padding-right: #{$pixel}px;}
+    .pb-sm-#{$pixel} {padding-bottom: #{$pixel}px;}
+    .pl-sm-#{$pixel} {padding-left: #{$pixel}px;}
+  }
+
+  // md
+  @media (min-width: $md) and (max-width: $lg - 1) {
+    .mt-md-#{$pixel} {margin-top: #{$pixel}px;}
+    .mr-md-#{$pixel} {margin-right: #{$pixel}px;}
+    .mb-md-#{$pixel} {margin-bottom: #{$pixel}px;}
+    .ml-md-#{$pixel} {margin-left: #{$pixel}px;}
+
+    .pt-md-#{$pixel} {padding-top: #{$pixel}px;}
+    .pr-md-#{$pixel} {padding-right: #{$pixel}px;}
+    .pb-md-#{$pixel} {padding-bottom: #{$pixel}px;}
+    .pl-md-#{$pixel} {padding-left: #{$pixel}px;}
+  }
+
+  // lg
+  @media (min-width: $lg)  {
+    .mt-lg-#{$pixel} {margin-top: #{$pixel}px;}
+    .mr-lg-#{$pixel} {margin-right: #{$pixel}px;}
+    .mb-lg-#{$pixel} {margin-bottom: #{$pixel}px;}
+    .ml-lg-#{$pixel} {margin-left: #{$pixel}px;}
+
+    .pt-lg-#{$pixel} {padding-top: #{$pixel}px;}
+    .pr-lg-#{$pixel} {padding-right: #{$pixel}px;}
+    .pb-lg-#{$pixel} {padding-bottom: #{$pixel}px;}
+    .pl-lg-#{$pixel} {padding-left: #{$pixel}px;}
+  }
+}
