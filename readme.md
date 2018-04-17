@@ -1,6 +1,6 @@
 # spaces.css
 
-Ready to use css classes for spacing
+ready to use css classes for spacing
 
  - margin and padding
  - Range 0px to 100px

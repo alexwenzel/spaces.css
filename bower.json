@@ -1,0 +1,22 @@
+{
+  "name": "spaces.css",
+  "homepage": "https://github.com/alexwenzel/spaces.css",
+  "authors": [
+    "alexwenzel <alexander.wenzel.berlin@gmail.com>"
+  ],
+  "description": "ready to use css classes for spacing",
+  "main": "src/spaces.css",
+  "keywords": [
+    "spacing",
+    "margin",
+    "padding"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
